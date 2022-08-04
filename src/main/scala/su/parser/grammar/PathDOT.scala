@@ -125,6 +125,8 @@ trait PathDOT {
   def typeDec: Parser[Type.TypeDec] = ("{" ^~ identifierP ^~ ":" ^~ typ ^~ ".." ^~ typ ^~ "}") <#> {
     case ((((((_, name), _), lo), _), hi), _) => Type.TypeDec(name, lo, hi)
   }
+
+  def termParser: Parser[Term] = spacesP >> term <* (spacesP >> eofP)
 }
 
 object PathDOT extends PathDOT

@@ -12,10 +12,11 @@ import java.nio.file.Path
   import PathDOT._
 
 
-  val u = ParseUnit.fromPath(Paths.get("pathdot_tests/lib.scala"))
-  println(u)
+//  val u = ParseUnit.fromPath(Paths.get("pathdot_tests/lib.scala"))
+//  println(u)
 
-  val p = spacesP >> term
+//  val p = spacesP >> term <* (spacesP >> eofP)
+  val p = termParser
 //  val s = "let x = fun(z: (x:Top) => { this => (x:x.A) => this.type }) x.z x.y in let x = new(z: Top) { A := Bot } & { a = Top } in x"
   val s =
     """
