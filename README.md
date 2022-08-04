@@ -1,3 +1,5 @@
 ## 素
 
-### $p$DOT: DOT with Path-Dependent Types
+### *p*DOT: DOT with Path-Dependent Types
+
+
