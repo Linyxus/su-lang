@@ -1,4 +1,4 @@
-package su.core.pathdot.typecheck
+package su.core.pathdot.typer
 
 import su.core.pathdot.Trees._
 import Context._
