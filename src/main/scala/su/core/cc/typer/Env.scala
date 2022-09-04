@@ -13,3 +13,7 @@ case class Env(termVars: Map[String, Type], typeVars: Map[String, Type]) {
       Env(termVars, typeVars.updated(name, bound))
 }
 
+object Env {
+  def empty: Env = Env(Map.empty, Map.empty)
+}
+
